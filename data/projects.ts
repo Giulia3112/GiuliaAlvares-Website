@@ -23,278 +23,520 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "ai-learning-platform",
-    title: "AI Learning Platform",
-    subtitle: "Plataforma de aprendizado adaptativo com IA",
+    slug: "carbon-pay",
+    title: "Carbon Pay",
+    subtitle: "Sistema inteligente de gestão e pagamento de carbono",
+    type: "startup",
+    year: 2025,
+    tags: ["AI", "Sustainability", "FinTech", "Carbon Credits", "SaaS"],
+    shortDescription:
+      "Plataforma automatizada que permite que empresas calculem, monitorem e compensem sua pegada de carbono usando inteligência artificial e créditos certificados.",
+    longDescription: `## Contexto
+
+Empresas de todos os portes enfrentam pressão crescente para reduzir emissões e comprovar práticas ambientais. No entanto, calcular pegada de carbono, gerar relatórios ESG e comprar créditos certificados é complexo, caro e burocrático.
+
+O processo tradicional envolve consultorias, modelos manuais e intermediários — inviabilizando transparência e escala.
+
+## Desafio
+
+Criar uma solução capaz de:
+
+- Automatizar cálculos de emissões em tempo real
+
+- Integrar dados operacionais, financeiros e de energia
+
+- Reduzir custos e eliminar intermediários
+
+- Certificar créditos de carbono de forma confiável
+
+- Facilitar a compensação para empresas pequenas e grandes
+
+## Solução
+
+O Carbon Pay combina IA + automação + integrações para:
+
+- Processar dados de consumo e estimar emissões automaticamente
+
+- Sugerir créditos certificados alinhados ao perfil de emissões da empresa
+
+- Gerar relatórios ESG completos e auditáveis
+
+- Criar histórico de compensação transparente
+
+- Realizar pagamento instantâneo dos créditos compensatórios
+
+A plataforma funciona como um \`SaaS plug-and-play\`, permitindo que empresas façam sua transição sustentável sem processos manuais.
+
+## Resultados
+
+- Redução média de 70% no custo operacional de cálculo e compensação
+
+- Emissões rastreadas de forma contínua com menor margem de erro
+
+- Processo de compensação 5x mais rápido
+
+- Transparência completa e auditável
+
+`,
+    role: "Founder & Product Designer",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+      "Vercel",
+      "OpenAI API",
+    ],
+    links: {
+      site: "https://carbon-pay.vercel.app/",
+    },
+    images: [
+      "https://carbon-pay.vercel.app/mockups/dashboard.png",
+      "https://carbon-pay.vercel.app/mockups/insights.png",
+    ],
+    metrics: [
+      { label: "Economia de Processos", value: "70%+" },
+      { label: "Velocidade na Compensação", value: "5x mais rápido" },
+      { label: "Precisão de Estimativa", value: "Alta" },
+    ],
+  },
+  {
+    slug: "aipply",
+    title: "AIpply",
+    subtitle: "Plataforma inteligente de oportunidades, candidaturas e desenvolvimento acadêmico-profissional",
+    type: "startup",
+    year: 2025,
+    tags: ["AI", "EdTech", "Productivity", "Search", "Mobile", "SaaS"],
+    shortDescription:
+      "Plataforma que encontra oportunidades acadêmicas e profissionais automaticamente, organiza candidaturas e utiliza IA para ajudar estudantes e jovens talentos a aplicarem melhor e mais rápido.",
+    longDescription: `## Contexto
+
+Todos os anos milhões de estudantes, pesquisadores e jovens profissionais deixam de conquistar bolsas, programas de liderança, intercâmbios, estágios, fellowships e oportunidades internacionais simplesmente porque **não conseguem encontrá-las a tempo**, não entendem os requisitos ou se perdem no processo de candidatura.
+
+O processo atual é fragmentado, manual e extremamente custoso em termos de tempo e organização pessoal.
+
+## Desafio
+
+Criar uma plataforma capaz de:
+
+- Encontrar oportunidades automaticamente na internet
+
+- Entender editais complexos e transformá-los em resumos objetivos
+
+- Organizar todos os documentos, textos e candidaturas num único lugar
+
+- Acompanhar deadlines, status e resultados
+
+- Ajudar o usuário a melhorar redações, essays e respostas de application
+
+- Personalizar recomendações com IA baseada no perfil e histórico do usuário
+
+E tudo isso com uma experiência elegante, rápida e acessível.
+
+## Solução
+
+O AIpply combina **web scraping inteligente**, **IA generativa**, **engenharia de produto** e **automação** para entregar uma experiência completa:
+
+### 🔍 1. Mecanismo de Busca de Oportunidades
+
+- Crawler próprio construído em Node.js / Scrapy / Exa API
+
+- Capaz de varrer sites de universidades, fundações, aceleradoras e organizações globais
+
+- Processamento com modelo LLM (Gemma 3B / Exa / GPT) para extrair:
+
+  - Requisitos
+
+  - Elegibilidade
+
+  - Documentos necessários
+
+  - Deadline
+
+  - Nível (graduação, mestrado, early-career, etc.)
+
+  - Tipo (bolsa, fellowship, programa, competição, aceleração)
+
+### 📄 2. Leitura inteligente de Editais
+
+- Upload de PDFs
+
+- Extração de texto com IA
+
+- Resumos estruturados: o que é, requisitos, documentos, etapas, benefícios
+
+### ✍️ 3. Assistente de Escrita e Organização
+
+- IA que cria, refina e armazena essays
+
+- Memória personalizada por usuário
+
+- Sugestões de melhoria e adaptação para cada vaga
+
+### 📊 4. Dashboard de Candidaturas
+
+- Status de cada aplicação
+
+- Acompanhamento de progresso
+
+- Alertas automáticos de deadlines
+
+### 🔮 5. Recomendação personalizada
+
+- Matching entre perfil e oportunidades com base em:
+
+  - Histórico de candidaturas
+
+  - Objetivos do usuário
+
+  - Background acadêmico e profissional
+
+  - Preferências (país, área, senioridade)
+
+## Resultados
+
+- +5.000 oportunidades catalogadas durante testes
+
+- Usuários reduzem até 70% do tempo gasto com busca e organização
+
+- Aplicações mais fortes e completas usando IA
+
+- Redução de erros, perda de deadlines e desorganização
+
+- Aumento real da taxa de aprovação em programas competitivos
+
+## Impacto
+
+O AIpply se posiciona como um novo paradigma no acesso a oportunidades educacionais e profissionais — especialmente para jovens de países emergentes que geralmente têm menos acesso a curadoria e mentoria especializada.
+
+`,
+    role: "Founder, CEO & Lead Product Engineer",
+    techStack: [
+      "React Native",
+      "Next.js",
+      "Node.js",
+      "Python",
+      "Firebase Auth",
+      "Firestore",
+      "Firebase Storage",
+      "PostgreSQL (Railway)",
+      "Prisma",
+      "Exa API",
+      "Gemma 3B",
+      "OpenAI API",
+      "TailwindCSS",
+    ],
+    links: {
+      site: "https://aipply.app",
+    },
+    images: [
+      "https://images.unsplash.com/photo-1526379095098-aa3452e9e085?w=1200",
+      "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?w=1200",
+    ],
+    metrics: [
+      { label: "Oportunidades Catalogadas", value: "5.000+" },
+      { label: "Redução no Tempo de Busca", value: "70%" },
+      { label: "Usuários Atendidos na Fase Beta", value: "Milhares" },
+    ],
+  },
+  {
+    slug: "rearth",
+    title: "Rearth",
+    subtitle: "Agritech regenerativa baseada em IA, análises de solo e dados satelitais",
+    type: "startup",
+    year: 2023,
+    tags: ["AgriTech", "ClimateTech", "AI", "Sustainability", "Satellite Imagery", "Regenerative Agriculture"],
+    shortDescription:
+      "Plataforma que auxilia agricultores na transição para práticas regenerativas através de análises de solo, dados satelitais, modelos climáticos e IA preditiva.",
+    longDescription: `## Contexto
+
+A agricultura regenerativa surge como alternativa às práticas convencionais, mas produtores têm dificuldade em medir impacto, monitorar a saúde do solo e comprovar ganhos de produtividade e carbono.
+
+## Desafio
+
+Criar um sistema capaz de:
+
+- Processar dados de satélite e índices NDVI em alta frequência
+
+- Integrar análises laboratoriais de solo e dados históricos
+
+- Sugerir práticas regenerativas personalizadas
+
+- Medir carbono, erosão, umidade e produtividade no campo
+
+## Solução
+
+O Rearth combina IA + geoprocessamento + ciência do solo para:
+
+- Mapear propriedades usando imagens de satélite
+
+- Acompanhar evolução do solo e vegetação
+
+- Sugerir práticas regenerativas (rotações, cobertura, microbiologia)
+
+- Prever impactos produtivos e climáticos
+
+- Gerar relatórios auditáveis para certificações de carbono
+
+## Destaques do estágio atual
+
+- Finalista global do Hult Prize 2023 em Lisboa
+
+- Selecionada na aceleradora ACE Cortex (SantanderX)
+
+- Top 25 Agritechs do Brasil pela F6S
+
+- Primeiros protótipos funcionais de análise satelital e dashboards
+
+- Parcerias em estruturação com produtores do Maranhão e Paraná
+
+## Resultados
+
+- Redução de custos com insumos no campo piloto
+
+- Aumento da saúde do solo (indicadores NDVI e matéria orgânica)
+
+- Transparência ambiental para financiamentos sustentáveis
+
+`,
+    role: "Founder & CTO",
+    techStack: [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "TensorFlow",
+      "Geospatial APIs",
+      "Sentinel Hub",
+      "PostgreSQL",
+      "QGIS",
+    ],
+    links: {
+      site: "https://rearth.ag",
+    },
+    images: [],
+    metrics: [
+      { label: "Agritechs Reconhecidas", value: "Top 25 BR" },
+      { label: "Produtores Pilotos", value: "Em implantação" },
+      { label: "Acelerações", value: "3+" },
+    ],
+  },
+  {
+    slug: "sprouthub",
+    title: "SproutHUB",
+    subtitle: "Hub de inovação e matchmaking inteligente entre empreendedores e oportunidades",
     type: "startup",
     year: 2024,
-    tags: ["AI", "EdTech", "SaaS", "Machine Learning"],
-    shortDescription: "Plataforma que personaliza o aprendizado usando inteligência artificial para adaptar conteúdo e ritmo às necessidades individuais de cada estudante.",
+    tags: ["Innovation", "Ecosystem", "AI", "Startup", "Networking"],
+    shortDescription:
+      "Hub híbrido (digital + físico) que conecta empreendedores a oportunidades de aceleração, networking, investidores e desenvolvimento profissional através de IA.",
     longDescription: `## Contexto
 
-A educação tradicional muitas vezes falha em atender às necessidades individuais dos estudantes. Cada pessoa aprende em ritmos diferentes e tem estilos de aprendizado únicos.
+Cidades emergentes carecem de hubs de inovação que verdadeiramente conectem fundadores a redes, mentores, oportunidades e estrutura para crescer.
 
 ## Desafio
 
-Criar uma solução que pudesse:
-- Adaptar conteúdo em tempo real
-- Identificar gaps de conhecimento
-- Personalizar exercícios e explicações
-- Escalar para milhares de usuários
+Criar um ambiente — físico e digital — capaz de:
+
+- Mapear empreendedores e seus estágios
+
+- Recomendar oportunidades (editais, acelerações, eventos)
+
+- Conectar founders a outros founders
+
+- Gerar comunidade e dealflow
 
 ## Solução
 
-Desenvolvemos uma plataforma que utiliza modelos de machine learning para:
-- Analisar o desempenho do estudante
-- Recomendar conteúdo personalizado
-- Gerar exercícios adaptativos
-- Fornecer feedback imediato e construtivo
+O SproutHUB combina:
 
-## Resultados
+- Mapa de empreendedores e startups locais
 
-- 10.000+ estudantes ativos
-- 85% de melhoria na retenção de conhecimento
-- 40% de aumento na taxa de conclusão de cursos`,
+- Recomendação de oportunidades baseada em IA
+
+- Espaço físico para encontros, workshops e comunidade
+
+- Vagas, editais e mentorias integradas
+
+- Programa de matchmaking ("Founder → Oportunidade")
+
+## Estágio atual
+
+- Versão 1 do MVP definida
+
+- Interface móvel sendo redesenhada em NativeWind + React Native
+
+- Backend e modelo de dados prontos para implementação
+
+- Parcerias iniciais com universidades e comunidades locais
+
+## Visão
+
+Transformar cidades como São Luís e Curitiba em microecosistemas de inovação.
+
+`,
     role: "Founder & Product Lead",
-    techStack: ["Next.js", "TypeScript", "Python", "TensorFlow", "PostgreSQL", "AWS"],
-    links: {
-      site: "https://example.com",
-      repo: "https://github.com/example",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200",
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200",
+    techStack: [
+      "React Native",
+      "NativeWind",
+      "Firebase",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
     ],
+    links: {
+      site: "https://sprout-hub.io",
+    },
+    images: [],
     metrics: [
-      { label: "Usuários Ativos", value: "10.000+" },
-      { label: "Taxa de Retenção", value: "85%" },
-      { label: "Taxa de Conclusão", value: "40%" },
+      { label: "Iniciativas Parceiras", value: "10+" },
+      { label: "Founders Mapeados", value: "Em fase inicial" },
+      { label: "MVP", value: "Em desenvolvimento" },
     ],
   },
   {
-    slug: "space-analytics-dashboard",
-    title: "Space Analytics Dashboard",
-    subtitle: "Visualização de dados espaciais em tempo real",
-    type: "app",
-    year: 2023,
-    tags: ["SpaceTech", "Data Visualization", "Web App"],
-    shortDescription: "Dashboard interativo para visualização e análise de dados de missões espaciais, satélites e fenômenos astronômicos.",
+    slug: "aspero",
+    title: "ASPERO Industries",
+    subtitle: "Telecom de nova geração com CubeSats resistentes à radiação para operação na Anomalia Magnética do Atlântico Sul",
+    type: "startup",
+    year: 2025,
+    tags: ["SpaceTech", "Satellite", "Telecom", "Radiation Shielding", "Connectivity", "B2B/B2C"],
+    shortDescription:
+      "Provedora de internet via satélite focada em operar dentro da Anomalia Magnética do Atlântico Sul usando CubeSats blindados com tecnologia Z-shielding.",
     longDescription: `## Contexto
 
-A necessidade de visualizar e entender dados espaciais complexos de forma intuitiva e em tempo real.
+O Brasil depende majoritariamente de cabos submarinos internacionais. Apenas 4% da conectividade nacional vem de satélites — e muitos não resistem à radiação da Anomalia Magnética do Atlântico Sul (SAMA), causando falhas e perda de vida útil.
 
 ## Desafio
 
-- Processar grandes volumes de dados
-- Visualizar informações em múltiplas dimensões
-- Manter performance com atualizações em tempo real
-- Criar uma interface intuitiva para não-especialistas
+Criar uma constelação de CubeSats que:
+
+- Operem dentro da região de maior radiação do planeta
+
+- Suportem longa duração em LEO sem danos eletrônicos
+
+- Entreguem conectividade confiável e acessível
+
+- Atendam áreas rurais, Amazônia e regiões sem cobertura
 
 ## Solução
 
-Dashboard construído com:
-- Visualizações 3D interativas
-- Filtros e queries em tempo real
-- Integração com APIs de agências espaciais
-- Design responsivo e acessível
+A ASPERO utiliza:
 
-## Resultados
+- Blindagem Z-shielding (multicamadas metálicas para proteção contra radiação)
 
-- Adotado por 3 organizações de pesquisa
-- Processamento de 1M+ pontos de dados
-- Interface acessível para usuários não-técnicos`,
-    role: "Product Designer & Frontend Lead",
-    techStack: ["React", "Three.js", "D3.js", "Node.js", "MongoDB"],
-    links: {
-      site: "https://example.com",
-      repo: "https://github.com/example",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1200",
+- Arquitetura de telecom modular e escalável
+
+- Estações em solo no Brasil + parceiro internacional
+
+- Modelo de operação híbrido (B2B → operadoras / B2C → usuários finais)
+
+## Estágio atual
+
+- Pesquisa concluída sobre Z-shielding (bases NASA + MIT)
+
+- Arquitetura inicial da constelação definida
+
+- Casos de uso validados para:
+
+  - Defesa
+
+  - Operadoras regionais
+
+  - Conectividade rural
+
+  - Amazônia
+
+- Fase de prototipagem com CubeSats marcada para iniciar validações
+
+`,
+    role: "Founder & Lead Systems Designer",
+    techStack: [
+      "CubeSat Architecture",
+      "Radiation Modeling",
+      "Material Engineering",
+      "Satellite Simulation",
+      "Python",
+      "GNSS/Ground Stations",
     ],
+    links: {
+      site: "https://aspero.space",
+    },
+    images: [],
     metrics: [
-      { label: "Organizações", value: "3" },
-      { label: "Pontos de Dados", value: "1M+" },
+      { label: "Custo por MB", value: "Reduzido" },
+      { label: "Cobertura", value: "Regiões críticas da SAMA" },
+      { label: "Fase", value: "Pré-prototipagem" },
     ],
   },
   {
-    slug: "quantum-computing-research",
-    title: "Quantum Computing Research",
-    subtitle: "Pesquisa em algoritmos quânticos para otimização",
-    type: "pesquisa",
-    year: 2023,
-    tags: ["Quantum Computing", "Research", "Algorithms"],
-    shortDescription: "Pesquisa acadêmica sobre aplicação de algoritmos quânticos para problemas de otimização em logística e supply chain.",
-    longDescription: `## Contexto
-
-A computação quântica promete resolver problemas de otimização exponencialmente mais rápido que computadores clássicos.
-
-## Desafio
-
-- Desenvolver algoritmos quânticos eficientes
-- Aplicar a problemas reais de logística
-- Validar resultados em simuladores quânticos
-- Publicar resultados em conferências de alto impacto
-
-## Solução
-
-Desenvolvemos e testamos algoritmos quânticos para:
-- Roteamento de veículos
-- Otimização de inventário
-- Planejamento de produção
-
-## Resultados
-
-- Artigo aceito em conferência internacional
-- 30% de melhoria em benchmarks de otimização
-- Código open-source disponível`,
-    role: "Research Lead",
-    techStack: ["Python", "Qiskit", "Cirq", "Jupyter"],
-    links: {
-      article: "https://example.com",
-      repo: "https://github.com/example",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200",
-    ],
-  },
-  {
-    slug: "sustainable-tech-accelerator",
-    title: "Sustainable Tech Accelerator",
-    subtitle: "Programa de aceleração para startups de impacto",
-    type: "case",
+    slug: "quickimovel",
+    title: "QuickImóvel",
+    subtitle: "Marketplace curado aliado a automação para corretores e compradores",
+    type: "startup",
     year: 2024,
-    tags: ["Impact", "Acceleration", "Sustainability"],
-    shortDescription: "Case de design e implementação de programa de aceleração focado em startups de tecnologia sustentável.",
+    tags: ["PropTech", "Marketplace", "Real Estate", "CRM", "Automation"],
+    shortDescription:
+      "Plataforma de imóveis altamente curada com gestão integrada para corretores, vitrines digitais, funil de vendas e experiência otimizada para compradores.",
     longDescription: `## Contexto
 
-A necessidade de acelerar startups que trabalham com soluções sustentáveis e de impacto ambiental positivo.
+A busca por imóveis no Brasil é fragmentada, com portais genéricos, anúncios duplicados e pouca curadoria. Corretores carecem de ferramentas modernas para gestão digital.
 
 ## Desafio
 
-- Estruturar programa de 6 meses
-- Conectar startups com mentores e investidores
-- Criar métricas de impacto mensuráveis
-- Garantir sustentabilidade do programa
+Criar uma plataforma que ofereça:
+
+- Experiência premium e curada para compradores
+
+- Gestão completa para corretores (clientes, imóveis, leads)
+
+- Pagamentos e comissionamento claro
+
+- Diferenciação visual e narrativa confiável
 
 ## Solução
 
-Programa completo incluindo:
-- Mentoria técnica e de negócios
-- Conexão com investidores de impacto
-- Workshops e eventos
-- Acompanhamento de métricas de impacto
+O QuickImóvel entrega:
 
-## Resultados
+- Vitrines profissionais de alto padrão
 
-- 12 startups aceleradas
-- R$ 5M em captação total
-- 50+ toneladas de CO2 reduzidas
-- 3 startups em série A`,
-    role: "Program Director",
-    techStack: ["Notion", "Airtable", "Webflow"],
+- Funil completo do corretor (captura → atendimento → fechamento)
+
+- Curadoria manual de imóveis premium
+
+- Ferramentas de anúncio, analytics e comunicação
+
+## Estágio atual
+
+- Identidade visual e copywriting profissional finalizados
+
+- Política de privacidade e termos de uso prontos
+
+- Estrutura de páginas em desenvolvimento (com sua orientação)
+
+- Base tecnológica sendo definida para MVP (Next.js + Firebase)
+
+## Visão
+
+Construir o portal mais premium e confiável de imóveis exclusivos no Brasil.
+
+`,
+    role: "CMO & Product Owner",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Firebase",
+    ],
     links: {
-      site: "https://example.com",
+      site: "https://quickimovel.com",
     },
-    images: [
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200",
-    ],
+    images: [],
     metrics: [
-      { label: "Startups", value: "12" },
-      { label: "Captação", value: "R$ 5M" },
-      { label: "CO2 Reduzido", value: "50+ ton" },
-    ],
-  },
-  {
-    slug: "design-system-library",
-    title: "Design System Library",
-    subtitle: "Biblioteca open-source de componentes React",
-    type: "open-source",
-    year: 2023,
-    tags: ["Open Source", "Design System", "React", "TypeScript"],
-    shortDescription: "Biblioteca de componentes React acessíveis e customizáveis, construída com TypeScript e Tailwind CSS.",
-    longDescription: `## Contexto
-
-A necessidade de uma biblioteca de componentes React moderna, acessível e fácil de usar.
-
-## Desafio
-
-- Criar componentes totalmente acessíveis
-- Manter API simples e intuitiva
-- Suportar customização completa
-- Documentação clara e exemplos
-
-## Solução
-
-Biblioteca com:
-- 30+ componentes
-- TypeScript completo
-- Acessibilidade WCAG 2.1 AA
-- Documentação interativa
-- Temas customizáveis
-
-## Resultados
-
-- 2.5k+ stars no GitHub
-- Usado em 50+ projetos
-- Contribuições da comunidade`,
-    role: "Maintainer & Core Developer",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Storybook"],
-    links: {
-      repo: "https://github.com/example",
-      site: "https://example.com",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200",
-    ],
-    metrics: [
-      { label: "GitHub Stars", value: "2.5k+" },
-      { label: "Projetos", value: "50+" },
-    ],
-  },
-  {
-    slug: "health-monitoring-app",
-    title: "Health Monitoring App",
-    subtitle: "App mobile para monitoramento de saúde pessoal",
-    type: "app",
-    year: 2024,
-    tags: ["Mobile", "HealthTech", "iOS", "Android"],
-    shortDescription: "Aplicativo mobile que permite monitorar métricas de saúde, conectar com wearables e receber insights personalizados.",
-    longDescription: `## Contexto
-
-A crescente necessidade de ferramentas para monitoramento proativo de saúde pessoal.
-
-## Desafio
-
-- Integrar com múltiplos wearables
-- Processar dados de saúde com privacidade
-- Criar interface intuitiva
-- Garantir conformidade com regulamentações
-
-## Solução
-
-App desenvolvido com:
-- Integração com Apple Health, Google Fit, Fitbit
-- Análise de padrões com IA
-- Interface minimalista e focada
-- Privacidade end-to-end
-
-## Resultados
-
-- 5.000+ downloads
-- 4.5 estrelas na App Store
-- Parceria com 3 fabricantes de wearables`,
-    role: "Product Lead & Co-founder",
-    techStack: ["React Native", "TypeScript", "Firebase", "TensorFlow Lite"],
-    links: {
-      site: "https://example.com",
-    },
-    images: [
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200",
-    ],
-    metrics: [
-      { label: "Downloads", value: "5.000+" },
-      { label: "Rating", value: "4.5 ⭐" },
+      { label: "Imóveis Curados", value: "Em expansão" },
+      { label: "Feedback de Corretores", value: "Extremamente positivo" },
+      { label: "Fase", value: "Pré-MVP" },
     ],
   },
 ];

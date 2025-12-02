@@ -18,7 +18,7 @@ export const profile: Profile = {
   links: {
     linkedin: "https://linkedin.com/in/giulia-alvares",
     github: "https://github.com/Giulia3112",
-    twitter: "https://twitter.com/giulia_alvares",
+    twitter: "https://x.com/GAlvares76552",
     email: "mailto:eu@giuliaalvares.com.br",
     website: "https://giuliaalvares.com.br",
   },
