@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Highlight } from "@/data/highlights";
-import { Award, Calendar, Presentation, BookOpen, Trophy } from "lucide-react";
+import { Award, Calendar, Presentation, BookOpen, Trophy, GraduationCap, Target, Users, Medal } from "lucide-react";
 
 interface HighlightCardProps {
   highlight: Highlight;
@@ -15,6 +15,10 @@ const iconMap = {
   conference: Presentation,
   publication: BookOpen,
   accomplishment: Trophy,
+  leadership: Users,
+  education: GraduationCap,
+  challenge: Target,
+  competition: Medal,
 };
 
 export default function HighlightCard({
