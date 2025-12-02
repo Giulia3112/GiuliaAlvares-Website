@@ -81,13 +81,13 @@ export default function Home() {
       <section id="journey" className="py-section">
         <div className="container mx-auto px-6">
           <SectionHeader
-            title="O que eu faço"
-            subtitle="Uma jornada em três etapas: da ideia à execução"
+            title="Minha Jornada"
+            subtitle="De São Luís para o mundo: uma trajetória de transformação"
             className="mb-16"
           />
           <div className="space-y-8">
             {journeySteps.map((step, index) => (
-              <JourneyStep key={step.number} step={step} index={index} />
+              <JourneyStep key={step.id} step={step} index={index} />
             ))}
           </div>
         </div>

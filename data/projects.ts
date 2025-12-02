@@ -89,9 +89,7 @@ A plataforma funciona como um \`SaaS plug-and-play\`, permitindo que empresas fa
       "Vercel",
       "OpenAI API",
     ],
-    links: {
-      site: "https://carbon-pay.vercel.app/",
-    },
+    links: {},
     images: [
       "https://carbon-pay.vercel.app/mockups/dashboard.png",
       "https://carbon-pay.vercel.app/mockups/insights.png",
@@ -228,15 +226,13 @@ O AIpply se posiciona como um novo paradigma no acesso a oportunidades educacion
       "OpenAI API",
       "TailwindCSS",
     ],
-    links: {
-      site: "https://aipply.app",
-    },
+    links: {},
     images: [
       "https://images.unsplash.com/photo-1526379095098-aa3452e9e085?w=1200",
       "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?w=1200",
     ],
     metrics: [
-      { label: "Oportunidades Catalogadas", value: "5.000+" },
+      { label: "Oportunidades Catalogadas", value: "65.000+" },
       { label: "Redução no Tempo de Busca", value: "70%" },
       { label: "Usuários Atendidos na Fase Beta", value: "Milhares" },
     ],
@@ -312,9 +308,7 @@ O Rearth combina IA + geoprocessamento + ciência do solo para:
       "PostgreSQL",
       "QGIS",
     ],
-    links: {
-      site: "https://rearth.ag",
-    },
+    links: {},
     images: [],
     metrics: [
       { label: "Agritechs Reconhecidas", value: "Top 25 BR" },
@@ -385,10 +379,10 @@ Transformar cidades como São Luís e Curitiba em microecosistemas de inovação
       "Node.js",
       "PostgreSQL",
     ],
-    links: {
-      site: "https://sprout-hub.io",
-    },
-    images: [],
+    links: {},
+    images: [
+      "/images/sprout-hub-logo.png",
+    ],
     metrics: [
       { label: "Iniciativas Parceiras", value: "10+" },
       { label: "Founders Mapeados", value: "Em fase inicial" },
@@ -460,9 +454,7 @@ A ASPERO utiliza:
       "Python",
       "GNSS/Ground Stations",
     ],
-    links: {
-      site: "https://aspero.space",
-    },
+    links: {},
     images: [],
     metrics: [
       { label: "Custo por MB", value: "Reduzido" },
@@ -529,9 +521,7 @@ Construir o portal mais premium e confiável de imóveis exclusivos no Brasil.
       "TailwindCSS",
       "Firebase",
     ],
-    links: {
-      site: "https://quickimovel.com",
-    },
+    links: {},
     images: [],
     metrics: [
       { label: "Imóveis Curados", value: "Em expansão" },
